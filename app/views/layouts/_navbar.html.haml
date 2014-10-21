@@ -1,4 +1,4 @@
-.navbar.navbar-default.navbar-static-top
+.navbar.navbar-default.navbar-fixed-top
   .container
     %button.navbar-toggle(type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse")
       %span.icon-bar
@@ -11,5 +11,23 @@
         %li= link_to "Work", "#work"
         %li= link_to "Skills", "#skills"
         %li= link_to "Experience", "#experience"
-        %li= link_to "Contact", "#contact"
+        %li.dropdown.pull-right
+          %a.btn-btn-default.dropdown-toggle{id:"dropdownMenu1", "data-toggle"=> 'dropdown'}
+            Contact Andrew
+            %b.caret
+          %ul.dropdown-menu.dropdown-menu-right{role:'menu', 'aria-labelledby'=>"dropdownMenu1"}
+            %li 
+              %a{'href' => 'tel:+8599408881'} (859) 940-8881 
+            %li
+              =mail_to 'andrewhouse621@gmail.com', "andrewhouse621@gmail.com", subject: "I saw your portfolio and was interested in talking about career opportunities"
+            %li
+              %a{'href' => 'http://iamandrewhouse.com'}
+                Andrew's Blog
+            %li
+              %a{'href' => 'http://github.com/andrewhouse'}
+                Andrew's Github
+                %i.fa.fa-github.fa-2x
+
+                  
+
 
