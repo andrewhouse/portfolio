@@ -1,36 +1,375 @@
-.col-lg-6.left#work
-  =link_to image_tag('pricetimate.png', class: 'pic'), 'http://www.pricetimate.com'
-  =link_to 'http://github.com/andrewhouse/weekly', class: 'btn btn-primary' do 
-    Github 
-    %i.fa.fa-github
-.col-lg-6
-  =link_to image_tag('busbee.png', class: 'pic'), 'http://busbee.herokuapp.com'
-  =link_to 'http://github.com/andrewhouse/hackathon', class: 'btn btn-primary' do 
-    Github 
-    %i.fa.fa-github
+.col-lg-12
+  .jumbotron#work
+    %h2 Work
 .col-lg-6.left
-  =link_to image_tag('tiy-homework.png', class: 'pic'), 'http://tiy-homework.herokuapp.com'
-  =link_to 'http://github.com/andrewhouse/TIY-Homework-Checker', class: 'btn btn-primary' do 
-    Github 
-    %i.fa.fa-github
+  .panel.panel-danger
+    .panel-heading
+      %h3.panel-title Pricetimate
+    .panel-body
+      =link_to image_tag('pricetimate.png', class: 'pic'), 'http://www.pricetimate.com'
+      =link_to 'http://github.com/andrewhouse/weekly', class: 'btn btn-primary' do 
+        Github 
+        %i.fa.fa-github
+      %button.btn.btn-success{'data-toggle' => 'modal', 'data-target' => '#pricetimate'} Screenshots
+.modal.fade.pricetimate#pricetimate
+  .modal-dialog.modal-lg
+    .modal-content
+      .modal-header
+        %h1 Pricetimate
+      .modal-body
+        #priceCar.carousel.slide{'data-ride' => 'carousel'}
+          .carousel-inner
+            .item.active
+              =image_tag('pricetimate2.png')
+              .carousel-caption
+                %h3
+                  Items List
+            .item
+              =image_tag('pricetimate3.png')
+              .carousel-caption
+                %h3
+                  Item Page
+            .item
+              =image_tag('pricetimate4.png')
+              .carousel-caption
+                %h3
+                  Item Creation Page
+            .item
+              =image_tag('pricetimate5.png')
+              .carousel-caption
+                %h3
+                  Artist Profile Page
+            .item
+              =image_tag('pricetimate.png')
+              .carousel-caption
+                %h3
+                  Home Page
+          %a.left.carousel-control{'href' => '#priceCar', 'role' => 'button', 'data-slide' => 'prev'}
+            %span.control-left.fa-stack.fa-lg
+              %i.fa.fa-chevron-left.fa-2x
+          %a.right.carousel-control{'href' => '#priceCar', 'role' => 'button', 'data-slide' => 'next'}
+            %span.control-right.fa-stack.fa-lg
+              %i.fa.fa-chevron-right.fa-2x
 .col-lg-6
-  =link_to image_tag('iron-shop.png', class:'pic'), 'http://iron-shop.herokuapp.com'
-  =link_to 'http://github.com/andrewhouse/iron-shop', class: 'btn btn-primary' do 
-    Github 
-    %i.fa.fa-github
+  .panel.panel-danger
+    .panel-heading
+      %h3.panel-title Busbee
+    .panel-body
+      =link_to image_tag('busbee.png', class: 'pic'), 'http://busbee.herokuapp.com'
+      =link_to 'http://github.com/andrewhouse/hackathon', class: 'btn btn-primary' do 
+        Github 
+        %i.fa.fa-github
+      %button.btn.btn-success{'data-toggle' => 'modal', 'data-target' => '#busbee'} Screenshots
+.modal.fade.busbee#busbee
+  .modal-dialog.modal-lg
+    .modal-content
+      .modal-header
+        %h1 Busbee
+      .modal-body
+        #busCar.carousel.slide{'data-ride' => 'carousel'}
+          .carousel-inner
+            .item.active
+              =image_tag('busbee2.png')
+              .carousel-caption
+                %h3
+                  Employees Page
+            .item
+              =image_tag('busbee3.png')
+              .carousel-caption
+                %h3
+                  Employee Folders Page
+            .item
+              =image_tag('busbee4.png')
+              .carousel-caption
+                %h3
+                  Folder Page
+            .item
+              =image_tag('busbee.png')
+              .carousel-caption
+                %h3
+                  Home Page
+          %a.left.carousel-control{'href' => '#busCar', 'role' => 'button', 'data-slide' => 'prev'}
+            %span.control-left.fa-stack.fa-lg
+              %i.fa.fa-chevron-left.fa-2x
+          %a.right.carousel-control{'href' => '#busCar', 'role' => 'button', 'data-slide' => 'next'}
+            %span.control-right.fa-stack.fa-lg
 .col-lg-6.left
-  =link_to image_tag('friendly-books.png', class: 'pic'), 'http://friendly-books.herokuapp.com'
-  =link_to 'http://github.com/andrewhouse/books', class: 'btn btn-primary' do 
-    Github 
-    %i.fa.fa-github
+  .panel.panel-danger
+    .panel-heading
+      %h3.panel-title The Iron Yard Homework
+    .panel-body
+      =link_to image_tag('tiy-homework.png', class: 'pic'), 'http://tiy-homework.herokuapp.com'
+      =link_to 'http://github.com/andrewhouse/TIY-Homework-Checker', class: 'btn btn-primary' do 
+        Github 
+        %i.fa.fa-github
+      %button.btn.btn-success{'data-toggle' => 'modal', 'data-target' => '#homework'} Screenshots
+.modal.fade.homework#homework
+  .modal-dialog.modal-lg
+    .modal-content
+      .modal-header
+        %h1 The Iron Yard Homework
+      .modal-body
+        #homeCar.carousel.slide{'data-ride' => 'carousel'}
+          .carousel-inner
+            .item.active
+              =image_tag('tiy-homework2.png')
+              .carousel-caption
+                %h3
+                  Homework Page
+            .item
+              =image_tag('tiy-homework3.png')
+              .carousel-caption
+                %h3
+                  Student Blogs
+            .item
+              =image_tag('tiy-homework4.png')
+              .carousel-caption
+                %h3
+                  Student Github Repositories
+            .item
+              =image_tag('tiy-homework5.png')
+              .carousel-caption
+                %h3
+                  Student Github Repositories
+            .item
+              =image_tag('tiy-homework6.png')
+              .carousel-caption
+                %h3
+                  About Page
+            .item
+              =image_tag('tiy-homework7.png')
+              .carousel-caption
+                %h3
+                  Student Profile Page
+            .item
+              =image_tag('tiy-homework.png')
+              .carousel-caption
+                %h3
+                  Student Progress List
+          %a.left.carousel-control{'href' => '#homeCar', 'role' => 'button', 'data-slide' => 'prev'}
+            %span.control-left.fa-stack.fa-lg
+              %i.fa.fa-chevron-left.fa-2x
+          %a.right.carousel-control{'href' => '#homeCar', 'role' => 'button', 'data-slide' => 'next'}
+            %span.control-right.fa-stack.fa-lg
 .col-lg-6
-  =link_to image_tag('hangman.png',class: 'pic'), 'http://andrew-hangman.herokuapp.com'
-  =link_to 'http://github.com/andrewhouse/hangman', class: 'btn btn-primary' do 
-    Github 
-    %i.fa.fa-github
+  .panel.panel-danger
+    .panel-heading
+      %h3.panel-title Iron Shop
+    .panel-body
+      =link_to image_tag('iron-shop.png', class:'pic'), 'http://iron-shop.herokuapp.com'
+      =link_to 'http://github.com/andrewhouse/iron-shop', class: 'btn btn-primary' do 
+        Github 
+        %i.fa.fa-github
+      %button.btn.btn-success{'data-toggle' => 'modal', 'data-target' => '#ironshop'} Screenshots
+.modal.fade.ironshop#ironshop
+  .modal-dialog.modal-lg
+    .modal-content
+      .modal-header
+        %h1 Iron Shop
+      .modal-body
+        #ironCar.carousel.slide{'data-ride' => 'carousel'}
+          .carousel-inner
+            .item.active
+              =image_tag('iron-shop2.png')
+              .carousel-caption
+                %h3
+                  For Sale List
+            .item
+              =image_tag('iron-shop3.png')
+              .carousel-caption
+                %h3
+                  Listed Item
+            .item
+              =image_tag('iron-shop4.png')
+              .carousel-caption
+                %h3
+                  Added to Cart
+            .item
+              =image_tag('iron-shop5.png')
+              .carousel-caption
+                %h3
+                  Cart Page
+            .item
+              =image_tag('iron-shop6.png')
+              .carousel-caption
+                %h3
+                  Checkout
+            .item
+              =image_tag('iron-shop7.png')
+              .carousel-caption
+                %h3
+                  Purchase Successful
+            .item
+              =image_tag('iron-shop.png')
+              .carousel-caption
+                %h3
+                  Home Page
+          %a.left.carousel-control{'href' => '#ironCar', 'role' => 'button', 'data-slide' => 'prev'}
+            %span.control-left.fa-stack.fa-lg
+              %i.fa.fa-chevron-left.fa-2x
+          %a.right.carousel-control{'href' => '#ironCar', 'role' => 'button', 'data-slide' => 'next'}
+            %span.control-right.fa-stack.fa-lg
+              %i.fa.fa-chevron-right.fa-2x
 .col-lg-6.left
-  =link_to image_tag('sinatra.png', class: 'pic'), 'http://andrew-sinatra.herokuapp.com'
-  =link_to 'http://github.com/andrewhouse/sinatra_app', class: 'btn btn-primary' do 
-    Github 
-    %i.fa.fa-github
+  .panel.panel-danger
+    .panel-heading
+      %h3.panel-title Friendly Books
+    .panel-body
+      =link_to image_tag('friendly-books.png', class: 'pic'), 'http://friendly-books.herokuapp.com'
+      =link_to 'http://github.com/andrewhouse/books', class: 'btn btn-primary' do 
+        Github 
+        %i.fa.fa-github
+      %button.btn.btn-success{'data-toggle' => 'modal', 'data-target' => '#books'} Screenshots
+.modal.fade.books#books
+  .modal-dialog.modal-lg
+    .modal-content
+      .modal-header
+        %h1 Friendly Books
+      .modal-body
+        #bookCar.carousel.slide{'data-ride' => 'carousel'}
+          .carousel-inner
+            .item.active
+              =image_tag('friendly-books2.png')
+              .carousel-caption
+                %h3
+                  Book Page
+            .item
+              =image_tag('friendly-books3.png')
+              .carousel-caption
+                %h3
+                  Book Page
+            .item
+              =image_tag('friendly-books4.png')
+              .carousel-caption
+                %h3
+                  Recommend a Book
+            .item
+              =image_tag('friendly-books5.png')
+              .carousel-caption
+                %h3
+                  Users List
+            .item
+              =image_tag('friendly-books6.png')
+              .carousel-caption
+                %h3
+                  Profile Page
+            .item
+              =image_tag('friendly-books7.png')
+              .carousel-caption
+                %h3
+                  Book Reviewed
+            .item
+              =image_tag('friendly-books.png')
+              .carousel-caption
+                %h3
+                  Home Page
+          %a.left.carousel-control{'href' => '#bookCar', 'role' => 'button', 'data-slide' => 'prev'}
+            %span.control-left.fa-stack.fa-lg
+              %i.fa.fa-chevron-left.fa-2x
+          %a.right.carousel-control{'href' => '#bookCar', 'role' => 'button', 'data-slide' => 'next'}
+            %span.control-right.fa-stack.fa-lg
+              %i.fa.fa-chevron-right.fa-2x
+.col-lg-6
+  .panel.panel-danger
+    .panel-heading
+      %h3.panel-title Hangme
+    .panel-body
+      =link_to image_tag('hangman.png',class: 'pic'), 'http://andrew-hangman.herokuapp.com'
+      =link_to 'http://github.com/andrewhouse/hangman', class: 'btn btn-primary' do 
+        Github 
+        %i.fa.fa-github
+      %button.btn.btn-success{'data-toggle' => 'modal', 'data-target' => '#hangman'} Screenshots
+.modal.fade.hangman#hangman
+  .modal-dialog.modal-lg
+    .modal-content
+      .modal-header
+        %h1 Hangme
+      .modal-body
+        #hangCar.carousel.slide{'data-ride' => 'carousel'}
+          .carousel-inner
+            .item.active
+              =image_tag('hangman2.png')
+              .carousel-caption
+                %h3
+                  Play Game
+            .item
+              =image_tag('hangman3.png')
+              .carousel-caption
+                %h3
+                  Lost Game
+            .item
+              =image_tag('hangman4.png')
+              .carousel-caption
+                %h3
+                  Create a Game
+            .item
+              =image_tag('hangman5.png')
+              .carousel-caption
+                %h3
+                  Win Game
+            .item
+              =image_tag('hangman.png')
+              .carousel-caption
+                %h3
+                  Home Page
+          %a.left.carousel-control{'href' => '#hangCar', 'role' => 'button', 'data-slide' => 'prev'}
+            %span.control-left.fa-stack.fa-lg
+              %i.fa.fa-chevron-left.fa-2x
+          %a.right.carousel-control{'href' => '#hangCar', 'role' => 'button', 'data-slide' => 'next'}
+            %span.control-right.fa-stack.fa-lg
+              %i.fa.fa-chevron-right.fa-2x
+.col-lg-6.left
+  .panel.panel-danger
+    .panel-heading
+      %h3.panel-title Sinatra Fun
+    .panel-body
+      =link_to image_tag('sinatra.png', class: 'pic'), 'http://andrew-sinatra.herokuapp.com'
+      =link_to 'http://github.com/andrewhouse/sinatra_app', class: 'btn btn-primary' do 
+        Github 
+        %i.fa.fa-github
+      %button.btn.btn-success{'data-toggle' => 'modal', 'data-target' => '#sinatra'} Screenshots
+.modal.fade.sinatra#sinatra
+  .modal-dialog.modal-lg
+    .modal-content
+      .modal-header
+        %h1 Sinatra Fun
+      .modal-body
+        #sinCar.carousel.slide{'data-ride' => 'carousel'}
+          .carousel-inner
+            .item.active
+              =image_tag('sinatra2.png')
+              .carousel-caption
+                %h3
+                  Home Page
+            .item
+              =image_tag('sinatra3.png')
+              .carousel-caption
+                %h3
+                  Letter Counter
+            .item
+              =image_tag('sinatra4.png')
+              .carousel-caption
+                %h3
+                  Letter Counter: Submit
+            .item
+              =image_tag('sinatra5.png')
+              .carousel-caption
+                %h3
+                  Repository Search
+            .item
+              =image_tag('sinatra6.png')
+              .carousel-caption
+                %h3
+                  Important News
+            .item
+              =image_tag('sinatra.png')
+              .carousel-caption
+                %h3
+                  Times Table
+          %a.left.carousel-control{'href' => '#sinCar', 'role' => 'button', 'data-slide' => 'prev'}
+            %span.control-left.fa-stack.fa-lg
+              %i.fa.fa-chevron-left.fa-2x
+          %a.right.carousel-control{'href' => '#sinCar', 'role' => 'button', 'data-slide' => 'next'}
+            %span.control-right.fa-stack.fa-lg
+              %i.fa.fa-chevron-right.fa-2x
 .col-lg-12

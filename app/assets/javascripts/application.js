@@ -15,3 +15,9 @@
 //= require twitter/bootstrap
 //
 //= require_tree .
+$(function(){
+  $('.btn.btn-success').click(function(){
+    $(this).next(".modal").modal();
+    $(this).next('.carousel').carousel({interval: 3000});
+   });
+})

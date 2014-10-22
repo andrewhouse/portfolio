@@ -24,7 +24,6 @@
 .col-lg-4{
   margin-top: 7%;
   text-align:center;
-  margin-bottom: 5%;
   h5{
     font-size:1.5em;
   }
@@ -32,8 +31,8 @@
     text-decoration: none;
   }
   .panel{
-    margin-top: 4%;
     height: 16em;
+    margin-top: -9%;
   }
 }
 .col-lg-6{
@@ -47,7 +46,39 @@
   .btn{
     margin-top: 2%;
   }
+  .panel-body{
+    img{
+      width: 100%;
+    }
+  }
 }
 .left{
   margin-left: -1%;
+}
+.jumbotron{
+  margin-top: 4%;
+  text-align: center;
+}
+#work{
+  margin-bottom: 7%;
+  margin-top: 6%;
+}
+.carousel-control .control-left,
+.carousel-control .control-right {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+}
+.carousel-control .control-left {
+  left: 50%;
+}
+.carousel-control .control-right {
+  right: 50%;
+}
+.modal-header{
+  text-align: center;
+}
+.carousel-caption{
+  color: slategray;
 }
