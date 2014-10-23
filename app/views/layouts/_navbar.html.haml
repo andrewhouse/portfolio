@@ -4,30 +4,21 @@
       %span.icon-bar
       %span.icon-bar
       %span.icon-bar
-    %a.navbar-brand(href="#") Andrew House
+    %a.navbar-brand(href="#about") Andrew House
     .navbar-collapse.collapse.navbar-responsive-collapse
       %ul.nav.navbar-nav.pull-right
-        %li= link_to "About", "#about"
         %li= link_to "Work", "#work"
         %li= link_to "Skills", "#skills"
         %li= link_to "Experience", "#experience"
-        %li.dropdown.pull-right
-          %a.btn-btn-default.dropdown-toggle{id:"dropdownMenu1", "data-toggle"=> 'dropdown'}
-            Contact Andrew
-            %b.caret
-          %ul.dropdown-menu.dropdown-menu-right{role:'menu', 'aria-labelledby'=>"dropdownMenu1"}
-            %li 
-              %a{'href' => 'tel:+8599408881'} (859) 940-8881 
-            %li
-              =mail_to 'me@drew.house', "me@drew.house", subject: "I saw your portfolio and was interested in talking about career opportunities"
-            %li
-              %a{'href' => 'http://iamandrewhouse.com'}
-                Andrew's Blog
-            %li
-              %a{'href' => 'http://github.com/andrewhouse'}
-                Andrew's Github
-                %i.fa.fa-github.fa-2x
+        %li
+          =mail_to 'me@drew.house', "me@drew.house", subject: "I saw your portfolio and was interested in talking about career opportunities"
+        %li 
+          %a{'href' => 'tel:+8599408881'} (859) 940-8881 
+        %li
+          %a{'href' => 'http://github.com/andrewhouse'}
+            github.com/andrewhouse
 
-                  
+
+              
 
 

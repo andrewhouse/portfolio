@@ -1,16 +1,17 @@
+%br#work
 .col-lg-12
-  .jumbotron#work
+  .jumbotron
     %h2 Work
-.col-lg-6.left
-  .panel.panel-danger
+.col-lg-4.left
+  .panel.panel-primary
     .panel-heading
       %h3.panel-title Pricetimate
     .panel-body
-      =link_to image_tag('pricetimate.png', class: 'pic'), 'http://www.pricetimate.com'
+      =link_to image_tag('pricetimate-clip.png', class: 'pic'), 'http://www.pricetimate.com'
+      =link_to 'Live Demo', 'http://pricetimate.com', class: 'btn btn-info'
       =link_to 'http://github.com/andrewhouse/weekly', class: 'btn btn-primary' do 
         Github 
-        %i.fa.fa-github
-      %button.btn.btn-success{'data-toggle' => 'modal', 'data-target' => '#pricetimate'} Screenshots
+      %button.btn.btn-success{'data-toggle' => 'modal', 'data-target' => '#pricetimate'} Preview
 .modal.fade.pricetimate#pricetimate
   .modal-dialog.modal-lg
     .modal-content
@@ -50,16 +51,16 @@
           %a.right.carousel-control{'href' => '#priceCar', 'role' => 'button', 'data-slide' => 'next'}
             %span.control-right.fa-stack.fa-lg
               %i.fa.fa-chevron-right.fa-2x
-.col-lg-6
-  .panel.panel-danger
+.col-lg-4
+  .panel.panel-primary
     .panel-heading
       %h3.panel-title Busbee
     .panel-body
-      =link_to image_tag('busbee.png', class: 'pic'), 'http://busbee.herokuapp.com'
+      =link_to image_tag('busbee-clip.png', class: 'pic'), 'http://busbee.herokuapp.com'
+      =link_to 'Live Demo', 'http://iron-shop.herokuapp.com', class: 'btn btn-info'
       =link_to 'http://github.com/andrewhouse/hackathon', class: 'btn btn-primary' do 
         Github 
-        %i.fa.fa-github
-      %button.btn.btn-success{'data-toggle' => 'modal', 'data-target' => '#busbee'} Screenshots
+      %button.btn.btn-success{'data-toggle' => 'modal', 'data-target' => '#busbee'} Preview
 .modal.fade.busbee#busbee
   .modal-dialog.modal-lg
     .modal-content
@@ -94,16 +95,16 @@
           %a.right.carousel-control{'href' => '#busCar', 'role' => 'button', 'data-slide' => 'next'}
             %span.control-right.fa-stack.fa-lg
               %i.fa.fa-chevron-right.fa-2x
-.col-lg-6.left
-  .panel.panel-danger
+.col-lg-4.left
+  .panel.panel-primary
     .panel-heading
       %h3.panel-title The Iron Yard Homework
     .panel-body
-      =link_to image_tag('tiy-homework.png', class: 'pic'), 'http://tiy-homework.herokuapp.com'
+      =link_to image_tag('tiy-homework-clip.png', class: 'pic'), 'http://tiy-homework.herokuapp.com'
+      =link_to 'Live Demo','http://tiy-homework.herokuapp.com', class: 'btn btn-info'  
       =link_to 'http://github.com/andrewhouse/TIY-Homework-Checker', class: 'btn btn-primary' do 
         Github 
-        %i.fa.fa-github
-      %button.btn.btn-success{'data-toggle' => 'modal', 'data-target' => '#homework'} Screenshots
+      %button.btn.btn-success{'data-toggle' => 'modal', 'data-target' => '#homework'} Preview
 .modal.fade.homework#homework
   .modal-dialog.modal-lg
     .modal-content
@@ -153,16 +154,16 @@
           %a.right.carousel-control{'href' => '#homeCar', 'role' => 'button', 'data-slide' => 'next'}
             %span.control-right.fa-stack.fa-lg
               %i.fa.fa-chevron-right.fa-2x
-.col-lg-6
-  .panel.panel-danger
+.col-lg-4
+  .panel.panel-primary
     .panel-heading
       %h3.panel-title Iron Shop
     .panel-body
-      =link_to image_tag('iron-shop.png', class:'pic'), 'http://iron-shop.herokuapp.com'
+      =link_to image_tag('iron-shop-clip.png', class:'pic'), 'http://iron-shop.herokuapp.com'
+      =link_to 'Live Demo','http://iron-shop.herokuapp.com', class: 'btn btn-info'  
       =link_to 'http://github.com/andrewhouse/iron-shop', class: 'btn btn-primary' do 
         Github 
-        %i.fa.fa-github
-      %button.btn.btn-success{'data-toggle' => 'modal', 'data-target' => '#ironshop'} Screenshots
+      %button.btn.btn-success{'data-toggle' => 'modal', 'data-target' => '#ironshop'} Preview
 .modal.fade.ironshop#ironshop
   .modal-dialog.modal-lg
     .modal-content
@@ -212,16 +213,16 @@
           %a.right.carousel-control{'href' => '#ironCar', 'role' => 'button', 'data-slide' => 'next'}
             %span.control-right.fa-stack.fa-lg
               %i.fa.fa-chevron-right.fa-2x
-.col-lg-6.left
-  .panel.panel-danger
+.col-lg-4.left
+  .panel.panel-primary
     .panel-heading
       %h3.panel-title Friendly Books
     .panel-body
-      =link_to image_tag('friendly-books.png', class: 'pic'), 'http://friendly-books.herokuapp.com'
+      =link_to image_tag('friendly-books-clip.png', class: 'pic'), 'http://friendly-books.herokuapp.com'
+      =link_to 'Live Demo','http://friendly-books.herokuapp.com', class: 'btn btn-info'  
       =link_to 'http://github.com/andrewhouse/books', class: 'btn btn-primary' do 
         Github 
-        %i.fa.fa-github
-      %button.btn.btn-success{'data-toggle' => 'modal', 'data-target' => '#books'} Screenshots
+      %button.btn.btn-success{'data-toggle' => 'modal', 'data-target' => '#books'} Preview
 .modal.fade.books#books
   .modal-dialog.modal-lg
     .modal-content
@@ -271,16 +272,16 @@
           %a.right.carousel-control{'href' => '#bookCar', 'role' => 'button', 'data-slide' => 'next'}
             %span.control-right.fa-stack.fa-lg
               %i.fa.fa-chevron-right.fa-2x
-.col-lg-6
-  .panel.panel-danger
+.col-lg-4
+  .panel.panel-primary
     .panel-heading
       %h3.panel-title Hangme
     .panel-body
-      =link_to image_tag('hangman.png',class: 'pic'), 'http://andrew-hangman.herokuapp.com'
+      =link_to image_tag('hangman-clip.png',class: 'pic'), 'http://andrew-hangman.herokuapp.com'
+      =link_to 'Live Demo','http://andrew-hangman.herokuapp.com', class: 'btn btn-info'  
       =link_to 'http://github.com/andrewhouse/hangman', class: 'btn btn-primary' do 
         Github 
-        %i.fa.fa-github
-      %button.btn.btn-success{'data-toggle' => 'modal', 'data-target' => '#hangman'} Screenshots
+      %button.btn.btn-success{'data-toggle' => 'modal', 'data-target' => '#hangman'} Preview
 .modal.fade.hangman#hangman
   .modal-dialog.modal-lg
     .modal-content
@@ -320,58 +321,3 @@
           %a.right.carousel-control{'href' => '#hangCar', 'role' => 'button', 'data-slide' => 'next'}
             %span.control-right.fa-stack.fa-lg
               %i.fa.fa-chevron-right.fa-2x
-.col-lg-6.left
-  .panel.panel-danger
-    .panel-heading
-      %h3.panel-title Sinatra Fun
-    .panel-body
-      =link_to image_tag('sinatra.png', class: 'pic'), 'http://andrew-sinatra.herokuapp.com'
-      =link_to 'http://github.com/andrewhouse/sinatra_app', class: 'btn btn-primary' do 
-        Github 
-        %i.fa.fa-github
-      %button.btn.btn-success{'data-toggle' => 'modal', 'data-target' => '#sinatra'} Screenshots
-.modal.fade.sinatra#sinatra
-  .modal-dialog.modal-lg
-    .modal-content
-      .modal-header
-        %h1 Sinatra Fun
-      .modal-body
-        #sinCar.carousel.slide{'data-ride' => 'carousel'}
-          .carousel-inner
-            .item.active
-              =image_tag('sinatra2.png')
-              .carousel-caption
-                %h3
-                  Home Page
-            .item
-              =image_tag('sinatra3.png')
-              .carousel-caption
-                %h3
-                  Letter Counter
-            .item
-              =image_tag('sinatra4.png')
-              .carousel-caption
-                %h3
-                  Letter Counter: Submit
-            .item
-              =image_tag('sinatra5.png')
-              .carousel-caption
-                %h3
-                  Repository Search
-            .item
-              =image_tag('sinatra6.png')
-              .carousel-caption
-                %h3
-                  Important News
-            .item
-              =image_tag('sinatra.png')
-              .carousel-caption
-                %h3
-                  Times Table
-          %a.left.carousel-control{'href' => '#sinCar', 'role' => 'button', 'data-slide' => 'prev'}
-            %span.control-left.fa-stack.fa-lg
-              %i.fa.fa-chevron-left.fa-2x
-          %a.right.carousel-control{'href' => '#sinCar', 'role' => 'button', 'data-slide' => 'next'}
-            %span.control-right.fa-stack.fa-lg
-              %i.fa.fa-chevron-right.fa-2x
-.col-lg-12
