@@ -2,18 +2,33 @@
 .col-lg-12
   .jumbotron
     %h2 Experience
-.col-lg-offset-3.col-lg-3
+.col-lg-4
   .panel.panel-primary
     .panel-heading
-      %h3.panel-title View Resume
+      %h3.panel-title The Iron Yard - Rails Engineering
+    .panel-body
+      %h5 Three month intense coding bootcamp designed to cultivate Ruby on Rails Developers. 60-80 hours per week, the course promoted the ability to teach yourself how to learn. Able to adapt to any situations on the job. 
+      %br
+.col-lg-4
+  .panel.panel-primary
+    .panel-heading
+      %h3.panel-title iPhone Tech Support
+    .panel-body
+      %h5 Working at a call center providing support to those who were having problems with their iPhones. Being able to help discontent customers find a solution gives me a benefit of keeping composure when dealing with clients. 
+      %br
+.col-lg-4
+  .panel.panel-primary
+    .panel-heading
+      %h3.panel-title Computer Sales Associate
+    .panel-body
+      %h5 Sales taught me the value of listening to people. An invaluable skill when working with teammates and using feedback to fix issues. I learned how to always seek alternative solutions any way I can to help people in need.
+      %br
+.col-lg-offset-4.col-lg-4
+  .panel.panel-info
+    .panel-heading
+      %h3.panel-title Resume
     .panel-body
       =link_to 'https://s3.amazonaws.com/tiy-portfolio/resume.pdf' do
-        %i.fa.fa-file-pdf-o.fa-4x
-      %br
-.col-lg-3
-  .panel.panel-primary
-    .panel-heading
-      %h3.panel-title Download Resume
-    .panel-body
+        %i.fa.fa-file-pdf-o.fa-4x.pull-left
       =link_to  controller: 'static_pages', action: 'download', filename: 'resume.pdf' do
-        %i.fa.fa-cloud-download.fa-4x
+        %i.fa.fa-cloud-download.fa-4x.pull-right

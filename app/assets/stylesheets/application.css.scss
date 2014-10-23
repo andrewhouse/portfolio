@@ -15,6 +15,7 @@
  */
 .picture{
   height: 18em;
+  border-radius: 2%;
 }
 .cnt{
   text-align:center;
@@ -25,6 +26,9 @@
 .col-lg-4{
   margin-top: 7%;
   text-align:center;
+  img{
+    display: inline-block;
+  }
   h5{
     font-size:1.5em;
   }
@@ -47,6 +51,7 @@
   }
   .panel-primary{
     background: #ddd;
+    color: black;
     img{
       width: 100%;
     }
@@ -91,5 +96,15 @@
     margin-right: auto;
     width: 80%;
     text-align: center;
+  }
+}
+.panel-info{
+  a{
+    .pull-left{
+      margin-left: 17%;
+    }
+    .pull-right{
+      margin-right: 17%;
+    }
   }
 }
