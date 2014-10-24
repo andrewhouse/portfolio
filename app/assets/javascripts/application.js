@@ -20,6 +20,7 @@ $(function(){
     $(this).next(".modal").modal();
     $(this).next('.carousel').carousel({interval: 3000});
    });
+  $('.first').addClass('slideLeft');
 })
 $(window).scroll(function() {
                 $('.panel-primary').each(function(){
