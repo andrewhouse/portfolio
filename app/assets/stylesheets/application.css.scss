@@ -36,6 +36,7 @@
     text-decoration: none;
   }
   .panel{
+    visibility: hidden;
     margin-top: -9%;
   }
 }
@@ -64,6 +65,7 @@
 .left{
 }
 .jumbotron{
+  visibility: hidden;
   margin-top: 4%;
   text-align: center;
 }
@@ -107,4 +109,8 @@
       margin-right: 17%;
     }
   }
+}
+.stretch{
+  width: 100%;
+  background-image: url(image-path('AndrewTIY.png'));
 }
