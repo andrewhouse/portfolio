@@ -1,18 +1,20 @@
 %h4#about
 .col-lg-4
   =link_to image_tag('us.png', class: 'picture pull-left'), 'http://iamandrewhouse.com'
-.col-lg-4
-  .cnt
-    %a{'href' => 'tel:+8599408881'} (859) 940-8881 
-    %br
-    =mail_to 'me@drew.house', "me@drew.house", subject: "I saw your portfolio and was interested in talking about career opportunities"
-    %br
-    %a{'href' => 'http://iamandrewhouse.com'}
-      iamandrewhouse.com
-    %br
-    %a{'href' => 'http://github.com/andrewhouse'}
-      github.com/andrewhouse
-    %br
+.col-lg-4.aboutPan
+  .panel.panel-default.second
+    .panel-body
+      .cnt
+        %a{'href' => 'tel:+8599408881'} (859) 940-8881 
+        %br
+        =mail_to 'me@drew.house', "me@drew.house", subject: "I saw your portfolio and was interested in talking about career opportunities"
+        %br
+        %a{'href' => 'http://iamandrewhouse.com'}
+          iamandrewhouse.com
+        %br
+        %a{'href' => 'http://github.com/andrewhouse'}
+          github.com/andrewhouse
+        %br
 .col-lg-4
   =link_to image_tag('iron_yard_lgo.png', class: 'picture pull-right'), 'http://theironyard.com'
 
