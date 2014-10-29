@@ -20,7 +20,6 @@ $(function(){
     $(this).next(".modal").modal();
     $(this).next('.carousel').carousel({interval: 3000});
    });
-  $('.first').addClass('slideLeft');
   $('.second').addClass('fadeIn');
 })
 $(window).scroll(function() {
@@ -54,14 +53,6 @@ $(window).scroll(function() {
                 var topOfWindow = $(window).scrollTop();
                         if (imagePos < topOfWindow+400) {
                                 $(this).addClass("slideExpandUp");
-                        }
-                });
-                $('.jumbotron').each(function(){
-                var imagePos = $(this).offset().top;
-
-                var topOfWindow = $(window).scrollTop();
-                        if (imagePos < topOfWindow+400) {
-                                $(this).addClass("slideLeft");
                         }
                 });
         });
